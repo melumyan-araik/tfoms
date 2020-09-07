@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ТФОМС Забайкальского края</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper row blue darken-2">
+            <div class="col offset-s1 s10">
+                <div class="brand-logo">ТФОМС Забайкальского края</div>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="container pt-35">
+        <div class="col s12 m7">
+            <div class="card horizontal">
+                <div class="card-stacked">
+                    <div class="card-content">
+                        <form id='form'>
+                            <div class="row">
+                                <div class="input-field inline col s12">
+                                    <input id="payload" type="text" class="validate payload">
+                                    <label class="payload" for="payload">
+                                        Введите ФИО и дату рождения* или номер полиса
+                                    </label>
+                                    <span class="helper-text" data-error="Неверный формат данных. Попробуйте снова"
+                                        data-success="">
+                                        * - формат даты
+                                        ДД.ММ.ГГГГ</span>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="progress progress-none">
+                            <div class="indeterminate"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div id="answer">
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>
